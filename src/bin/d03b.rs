@@ -3,7 +3,7 @@ fn partition_bit<'lt>(numbers: &[&'lt str], index: usize) -> (Vec<&'lt str>, Vec
     let mut o = Vec::new();
 
     for s in numbers.iter().copied() {
-        if s.chars().skip(index).next().unwrap() == '0' {
+        if s.chars().nth(index).unwrap() == '0' {
             z.push(s);
         } else {
             o.push(s);

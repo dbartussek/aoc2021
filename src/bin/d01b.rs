@@ -10,7 +10,7 @@ fn main() {
     let mut count = 0usize;
     let mut it = numbers
         .windows(3)
-        .map(|it| it.into_iter().sum::<isize>())
+        .map(|it| it.iter().sum::<isize>())
         .peekable();
 
     while let Some(this) = it.next() {
