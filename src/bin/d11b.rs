@@ -91,12 +91,12 @@ fn main() {
 
     for i in 1.. {
         let (no, flashes) = octos.flash();
-		
-		if flashes == 100 {
-			println!("{}", i);
-			break;
-		}
-		
+
+        if flashes == 100 {
+            println!("{}", i);
+            break;
+        }
+
         octos = no;
     }
 }
