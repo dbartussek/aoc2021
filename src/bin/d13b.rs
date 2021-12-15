@@ -40,7 +40,6 @@ fn to_string(points: &HashSet<[u16; 2]>) -> String {
     s
 }
 
-
 fn main() {
     let input = std::fs::read_to_string("input/13.txt").unwrap();
 
